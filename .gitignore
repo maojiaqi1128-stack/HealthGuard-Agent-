@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Data (keep structure, ignore large/generated files)
+data/db/*.duckdb
+data/chroma_db/
+data/raw/*.jsonl
+!data/raw/sample_notes.jsonl
+
+# Logs
+logs/
+*.log
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Evaluation results
+evaluations/results/*.json
+
+# Model cache
+.cache/
+
+# Temp & debug files
+api_debug.json
+debug_output*.txt
+kb_output.txt
+test_*.py
+test_*.txt
+test_*.json
+check_*.py
+run_*.py
+start_*.py
+launch_*.ps1
+kill_*.ps1
+fix_*.py
+import_*.py
+reimport_*.py
+webserver.py
+run.py
+start.py
+check_and_run.py
+debug_*.py
+
+# IDE config
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

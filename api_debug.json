@@ -1,0 +1,87 @@
+{
+  "request_id": "1c0361f7-f12b-40de-b6b0-1a9455ff73e8",
+  "patient_id": "P001",
+  "status": "completed",
+  "results": {
+    "structured_data": {
+      "demographics": {
+        "age": "65",
+        "gender": "男"
+      },
+      "chief_complaint": "",
+      "present_illness": "主诉胸闷气短3天。",
+      "medical_history": [],
+      "surgical_history": [],
+      "family_history": [],
+      "allergies": [],
+      "medications": [],
+      "vitals": {
+        "bp": "150/95"
+      },
+      "physical_exam": {
+        "BP": "150/95 mmHg"
+      },
+      "lab_results": [],
+      "imaging": []
+    },
+    "icd_codes": [
+      {
+        "code": "R06.02",
+        "description": "气短",
+        "confidence": 0.85,
+        "source_text": "主诉胸闷气短3天。"
+      },
+      {
+        "code": "I10",
+        "description": "原发性高血压",
+        "confidence": 0.95,
+        "source_text": "既往高血压10年"
+      },
+      {
+        "code": "E11.9",
+        "description": "2型糖尿病不伴有并发症",
+        "confidence": 0.95,
+        "source_text": "糖尿病5年"
+      }
+    ],
+    "guideline_results": [],
+    "compliance_report": {
+      "hipaa_compliant": true,
+      "phi_detected": false,
+      "phi_fields": [],
+      "warnings": [
+        "推荐字段 'chief_complaint' 为空。",
+        "推荐字段 'medical_history' 为空。",
+        "年龄值无效：65（应为 1-150 之间的整数）"
+      ],
+      "recommendations": [
+        "未检索到临床指南，请确认知识库已导入数据。"
+      ]
+    },
+    "safety_report": {
+      "hallucination_risk": "low",
+      "fact_check_passed": true,
+      "confidence_score": 0.95,
+      "flagged_claims": [],
+      "corrections": []
+    }
+  },
+  "metadata": {
+    "processing_time_seconds": 5.48,
+    "agent_timings": {
+      "cleaner": 1.8066637516021729,
+      "coder": 2.313610792160034,
+      "retriever": 0.04269266128540039,
+      "reviewer": 0.0,
+      "safety": 1.3007416725158691
+    },
+    "agents_executed": [
+      "cleaner",
+      "coder",
+      "retriever",
+      "generate",
+      "validate"
+    ],
+    "retry_count": 0
+  }
+}
